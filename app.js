@@ -4,7 +4,7 @@ const app = express( );
 
 const port = 2000;
 
-app.get("/guid_unique_id",( request,response) => {
+app.get("/guids",( request,response) => {
     // response.send("hello world from express");
     const guid_unique_id = uuidv4();
      response.json({ guid_unique_id});
